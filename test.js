@@ -18,7 +18,10 @@ window.onload = function() {
 	const queryString = window.location.search;
 	//console.log(queryString);
 	const urlParams = new URLSearchParams(queryString);
-	const newwords = urlParams.get('words');
+	var newwords = urlParams.get('words');
+	if (!newWords) {
+		newWords = 'Hello___Sir';
+	}
 	const gostring = newwords.split('___').join('\n');
 	var animStyle = urlParams.get('style');
 	// If no style is requested, pick one from this herearray

@@ -19,8 +19,8 @@ window.onload = function() {
 	//console.log(queryString);
 	const urlParams = new URLSearchParams(queryString);
 	var newwords = urlParams.get('words');
-	if (!newWords) {
-		newWords = 'Hello___Sir';
+	if (!newwords) {
+		newwords = 'Hello___Sir';
 	}
 	const gostring = newwords.split('___').join('\n');
 	var animStyle = urlParams.get('style');

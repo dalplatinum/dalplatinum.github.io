@@ -11,6 +11,10 @@
 // Individual letters mode
 // Image mode
 // *DONE* When particle count = 0 clear sceen, stop loop
+// Quality/number options
+// make the code more efficient
+// 	put some sort of debug counter on the screen that counts operations or something
+// 	might want to put each 'style' into it's own particle type?  would reduce the amount of 'ifs'
 
 window.onload = function() {
 	
@@ -97,7 +101,7 @@ window.onload = function() {
 	
 	// Set up object to contain particles and set some default values
 	var particles = {},
-		particleIndex = 200,
+		particleIndex = 100,
 		settings = {
 			hasStarted: false,
 			density: 15,
@@ -157,7 +161,7 @@ window.onload = function() {
 			settings.partLife = 280;
 			break;
 		case "stickmove":
-			particleIndex = 40;
+			particleIndex = 20;
 			settings.diefade = false;
 			settings.floorbounce = false;
 			settings.startingX = canvas.width / 1.45;
@@ -169,6 +173,7 @@ window.onload = function() {
 			settings.gravity = 0;
 			break;
 		case "bubbles":
+			particleIndex = 50;
 			settings.diefade = true;
 			settings.floorbounce = false;
 			settings.rotate = true;
@@ -187,6 +192,7 @@ window.onload = function() {
 			settings.popOut = true;
 			break;
 		case "arc":
+			particleIndex = 50;
 			settings.density = 12;
 			settings.diefade = true;
 			settings.floorbounce = true;
@@ -214,8 +220,8 @@ window.onload = function() {
 			settings.initvx = -2;
 			settings.initvyrnd = 5;
 			settings.initvy = 4;
-			settings.initryrnd = 27;
-			settings.initvr = 2;
+			settings.initryrnd = 17;
+			settings.initvr = 0;
 			break;
 		default:
 			settings.diefade = false;

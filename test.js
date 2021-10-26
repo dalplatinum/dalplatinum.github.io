@@ -155,6 +155,7 @@ window.onload = function() {
 			settings.fadeSpeed = 0;
 			break;
 		case "bounce":
+			particleIndex = 50;
 			settings.diefade = true;
 			settings.floorbounce = true;
 			settings.rotate = false;

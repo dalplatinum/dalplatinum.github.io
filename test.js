@@ -111,7 +111,7 @@ window.onload = function() {
 			startingY: canvas.height * 1.1,
 			gravity: 0.5,
 			startingScale: 0.2,
-			maxScale: 1.3,
+			maxScale: 1,
 			growspeed: 0.01,
 			trails: false,
 			clear: true,

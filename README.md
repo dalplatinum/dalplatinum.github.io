@@ -40,7 +40,9 @@ If you want to tie it to something like a chat trigger (I use '!p <words>') or a
 		tick case-sensitive
 		Message: !p *
 	
-So now if someone type '!p get in the sea' into my twitch channel, lioranboard will pick it up and change the URL of the browser source to http://dalplatinum.github.io/?words=get___in___the___sea.  In doing this, the page will reload and the animation will start.
+So now if someone types '!p get in the sea' into my twitch channel, lioranboard will pick it up and change the URL of the browser source to http://dalplatinum.github.io/?words=get___in___the___sea.  In doing this, the page will reload and the animation will start.
+	
+If you would rather use a channel points redemption, use a 'point redemption with message' trigger with the appropriate redemption setup in twitch.
 
 There are other automation tools but I haven't used them, so can't comment.  As long as whatever you use can change the browser source URL property, you should be good to go.
 	

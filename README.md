@@ -15,6 +15,8 @@ Style options are:
 		'splats'
 Or just leave the style bit off and get a random one.
 I'll add more styles as I a) think of them, and b) learn how to make them work.
+	
+Three underscores will be replaced with a newline.  Because I couldn't think of any other way to do that.
 
 If you are looking to use this in OBS, you can add it direct from here as a browser source - https://dalplatinum.github.io/?words=hello%20there
 	
@@ -29,12 +31,7 @@ If you want to tie it to something like a chat trigger (I use '!p <words>') or a
 		wildcard number: 0
 		turn to real: false
 	
-	2. Action: String: replace
-		variable: wordz
-		replace: <literally a single space>
-		new string: ___ (three underscores (this becomes a newline)
-	
-	3. Action: Source Change Settings
+	2. Action: Source Change Settings
 		sourcename: <name of your browser source>
 		sourcesettings: {"url":"http://dalplatinum.github.io/?words=/$wordz$/"}
 	

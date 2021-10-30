@@ -6,10 +6,12 @@ This is a basic canvas/javascript concoction that will display/animate words aga
 url format is like ?words=<whatever you want it to say>&style=<style>
 Style options are:
   		'vanilla',
-			'arc',
-			'bubbles',
-			'solitaire',
-			'stickmove',
-			'bounce'
+		'arc',
+		'bubbles',
+		'solitaire',
+		'stickmove',
+		'bounce'
+		'firework'
+		'splats'
 Or just leave the style bit off and get a random one.
 I'll add more styles as I a) think of them, and b) learn how to make them work.

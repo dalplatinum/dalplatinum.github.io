@@ -13,6 +13,7 @@ Style options are:
 		'bounce'
 		'firework'
 		'splats'
+		'circle'
 Or just leave the style bit off and get a random one.
 I'll add more styles as I a) think of them, and b) learn how to make them work.
 	

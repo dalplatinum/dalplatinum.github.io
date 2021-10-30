@@ -46,3 +46,13 @@ There are other automation tools but I haven't used them, so can't comment.  As 
 You can also set up a browser source to only say a specific thing in a specific style, and just hide it and when you show it, the animation will kick off.
 
 If it still doesn't work, find me and I'll help you out.  If I can.
+	
+TO-DO:
+	Sort out scaling, because it goes horribly wrong at some resolutions.
+	Add more effects
+	Add image mode
+	Add emoji
+	Add Twitch Emotes/user profile pics
+	Tidy up the code (comments/efficiency/redundancy)
+	Add a 'simple' mode for people without dedicated GFX hardware
+	

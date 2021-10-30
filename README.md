@@ -15,3 +15,30 @@ Style options are:
 		'splats'
 Or just leave the style bit off and get a random one.
 I'll add more styles as I a) think of them, and b) learn how to make them work.
+
+If you are looking to use this in OBS, you can add it direct from here as a browser source - https://dalplatinum.github.io/?words=hello%20there
+	
+If you want to tie it to something like a chat trigger (I use '!p <words>') or a points redemption, you are going to need some automation software that will allow you to change properties on an OBS source.  I use LioranBoard receiver for this, and it is set up like:
+	Add Button
+	edit commands
+	1. Action: String: Wildcard Pull
+		variable: wordz
+		wildcard number: 0
+		turn to real: false
+	2. Action: String: replace
+		variable: wordz
+		replace: <literally a single space>
+		new string: ___ (three underscores (this becomes a newline)
+	3. Action: Source Change Settings
+		sourcename: <name of your browser source>
+		sourcesettings: {"url":"http://dalplatinum.github.io/?words=/$wordz$/"}
+	Edit Twitch Triggers
+		tick case-sensitive
+	Message: !p *
+So now if someone type '!p get in the sea' into my twitch channel, lioranboard will pick it up and change the URL of the browser source to http://dalplatinum.github.io/?words=get___in___the___sea.  In doing this, the page will reload and the animation will start.
+
+There are other automation tools but I haven't used them, so can't comment.  As long as whatever you use can change the browser source URL property, you should be good to go.
+	
+You can also set up a browser source to only say a specific thing in a specific style, and just hide it and when you show it, the animation will kick off.
+
+If it still doesn't work, find me and I'll help you out.  If I can.
